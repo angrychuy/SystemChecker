@@ -79,6 +79,7 @@ public class SystemChecker implements Serializable {
 	public void handleComplete(){
 		final FacesContext ctx = FacesContext.getCurrentInstance();
 		ctx.addMessage(null, new FacesMessage("La busqueda a termiando"));
+		this.progress = 0;
 	}
 	
 	public void scan(ActionEvent e){
