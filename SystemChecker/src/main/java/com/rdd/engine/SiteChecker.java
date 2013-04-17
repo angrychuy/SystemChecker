@@ -27,7 +27,6 @@ public class SiteChecker implements Serializable {
 		try {
 			URL u = new URL(site.getUrl());
 			final HttpURLConnection conn = (HttpURLConnection) u.openConnection();
-			//conn.setInstanceFollowRedirects(false);
 			conn.setRequestMethod("HEAD");
 			conn.setConnectTimeout(this.timeout * 1000);
 			conn.setReadTimeout(timeout * 1000);
