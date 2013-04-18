@@ -48,7 +48,7 @@
 		<div class="row-fluid">
 			
 			<div class="span12">
-				<p:growl autoUpdate="true" showDetail="true" showSummary="true"/>
+				<p:growl autoUpdate="true" showSummary="true"/>
 				<h1 class="text-center">Monitor de sistemas</h1>
 				<p class="text-center">De click en el boton Scan para iniciar el escaneo de los sistemas.
 				Si un sistema esta caido la tabla lo mostrará con un icono rojo y el codigo HTTP de la causa.
@@ -61,7 +61,7 @@
 				
 				<p:outputPanel layout="block" autoUpdate="true">
 					<p:dataTable id="tblSites" value="#{systemChecker.model}" var="_sys">
-						<p:column headerText="Systema">
+						<p:column headerText="Sistema">
 							<h:outputText value="#{_sys.name}" />
 						</p:column>
 						<p:column headerText="Direccion">
