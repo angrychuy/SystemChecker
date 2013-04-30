@@ -42,10 +42,10 @@
 		<version.jboss.maven.plugin>7.3.Final</version.jboss.maven.plugin>
 		<primefaces.version>3.5</primefaces.version>
 		<seam.version>3.1.0.Final</seam.version>
-		<primefaces.themes.version>1.0.9</primefaces.themes.version>
+		<primefaces.themes.version>1.0.10</primefaces.themes.version>
 
 		<!-- Define the version of JBoss' Java EE 6 APIs and Tools we want to import. -->
-		<version.jboss.bom>1.0.4.Final</version.jboss.bom>
+		<version.jboss.bom>1.0.6.Final</version.jboss.bom>
 		<!-- Alternatively, comment out the above line, and un-comment the line 
 			below to use version 1.0.2.Final-redhat-1 which is a release certified to 
 			work with JBoss EAP 6. It requires you have access to the JBoss EAP 6 maven 
