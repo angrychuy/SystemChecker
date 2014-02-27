@@ -40,7 +40,7 @@
 
 		<!-- JBoss dependency versions -->
 		<version.jboss.maven.plugin>7.3.Final</version.jboss.maven.plugin>
-		<primefaces.version>3.5</primefaces.version>
+		<primefaces.version>4.0</primefaces.version>
 		<seam.version>3.1.0.Final</seam.version>
 		<primefaces.themes.version>1.0.10</primefaces.themes.version>
 
@@ -52,13 +52,13 @@
 			repository. -->
 		<!-- <version.jboss.bom>1.0.2.Final-redhat-1</version.jboss.bom>> -->
 		<!-- other plugin versions -->
-		<version.compiler.plugin>2.3.2</version.compiler.plugin>
-		<version.surefire.plugin>2.4.3</version.surefire.plugin>
-		<version.war.plugin>2.1.1</version.war.plugin>
+		<version.compiler.plugin>3.1</version.compiler.plugin>
+		<version.surefire.plugin>2.12</version.surefire.plugin>
+		<version.war.plugin>2.3</version.war.plugin>
 
 		<!-- maven-compiler-plugin -->
-		<maven.compiler.target>1.6</maven.compiler.target>
-		<maven.compiler.source>1.6</maven.compiler.source>
+		<maven.compiler.target>1.7</maven.compiler.target>
+		<maven.compiler.source>1.7</maven.compiler.source>
 	</properties>
 
 	<repositories>

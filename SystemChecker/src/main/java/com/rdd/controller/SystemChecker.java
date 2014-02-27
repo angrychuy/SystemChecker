@@ -26,18 +26,12 @@ import com.rdd.model.Site;
 @SessionScoped
 public class SystemChecker implements Serializable {
 	
-	private final static String CHEERDDINT = "http://192.168.1.170:8080/dcm4chee-web3";
 	private final static String CHEERDDEXT = "http://rddpacs.grupoimagenradiologica.com:8080/dcm4chee-web3";
-	private final static String CHEETKTINT = "http://192.168.1.170:8080/dcm4chee-web3";
 	private final static String CHEETKTEXT = "http://iddtpacs.grupoimagenradiologica.com:8080/dcm4chee-web3";
-	private final static String CHEEMXLINT = "http://192.168.1.171:8080/dcm4chee-web3";
 	private final static String CHEEMXLEXT = "http://iddpacs.grupoimagenradiologica.com:8080/dcm4chee-web3";
 	
-	private final static String JASPRDDINT = "http://192.168.1.171:8181/rddreportes";
 	private final static String JASPRDDEXT = "http://rddpacs.grupoimagenradiologica.com:8181/rddreportes";
-	private final static String JASPTKTINT = "http://192.168.1.172:8181/iddtreportes";
 	private final static String JASPTKTEXT = "http://iddtpacs.grupoimagenradiologica.com:8181/iddtreportes";
-	private final static String JASPMXLINT = "http://192.168.1.172:8181/iddreportes";
 	private final static String JASPMXLEXT = "http://iddpacs.grupoimagenradiologica.com:8181/iddreportes";
 	
 	private final static String CHEERDDNAM = "Rdd chee";
@@ -95,10 +89,6 @@ public class SystemChecker implements Serializable {
 		checker.checkSite(site);
 		if(site.isReachable()){
 			model.add(site);
-		} else {
-			site.setUrl(CHEERDDINT);
-			checker.checkSite(site);
-			model.add(site);
 		}
 		
 		oldValue = this.progress;
@@ -110,10 +100,6 @@ public class SystemChecker implements Serializable {
 		site.setName(CHEETKTNAM);
 		checker.checkSite(site);
 		if(site.isReachable()){
-			model.add(site);
-		} else {
-			site.setUrl(CHEETKTINT);
-			checker.checkSite(site);
 			model.add(site);
 		}
 		
@@ -127,10 +113,6 @@ public class SystemChecker implements Serializable {
 		checker.checkSite(site);
 		if(site.isReachable()){
 			model.add(site);
-		} else {
-			site.setUrl(CHEEMXLINT);
-			checker.checkSite(site);
-			model.add(site);
 		}
 		
 		oldValue = this.progress;
@@ -142,10 +124,6 @@ public class SystemChecker implements Serializable {
 		site.setName(JASPRDDNAM);
 		checker.checkSite(site);
 		if(site.isReachable()){
-			model.add(site);
-		} else {
-			site.setUrl(JASPRDDINT);
-			checker.checkSite(site);
 			model.add(site);
 		}
 		
@@ -159,10 +137,6 @@ public class SystemChecker implements Serializable {
 		checker.checkSite(site);
 		if(site.isReachable()){
 			model.add(site);
-		} else {
-			site.setUrl(JASPTKTINT);
-			checker.checkSite(site);
-			model.add(site);
 		}
 		
 		oldValue = this.progress;
@@ -174,10 +148,6 @@ public class SystemChecker implements Serializable {
 		site.setName(JASPMXLNAM);
 		checker.checkSite(site);
 		if(site.isReachable()){
-			model.add(site);
-		} else {
-			site.setUrl(JASPMXLINT);
-			checker.checkSite(site);
 			model.add(site);
 		}
 		
