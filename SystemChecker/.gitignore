@@ -7,3 +7,5 @@ MANIFEST.MF
 .idea
 *.iml
 .factorypath
+.classpath
+
