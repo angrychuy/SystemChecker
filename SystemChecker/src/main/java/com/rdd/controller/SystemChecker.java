@@ -87,9 +87,7 @@ public class SystemChecker implements Serializable {
 		site.setUrl(CHEERDDEXT);
 		site.setName(CHEERDDNAM);
 		checker.checkSite(site);
-		if(site.isReachable()){
-			model.add(site);
-		}
+		model.add(site);
 		
 		oldValue = this.progress;
 		this.progress = increment(oldValue, 16);
@@ -99,9 +97,7 @@ public class SystemChecker implements Serializable {
 		site.setUrl(CHEETKTEXT);
 		site.setName(CHEETKTNAM);
 		checker.checkSite(site);
-		if(site.isReachable()){
-			model.add(site);
-		}
+		model.add(site);
 		
 		oldValue = this.progress;
 		this.progress = increment(oldValue, 16);
@@ -111,9 +107,7 @@ public class SystemChecker implements Serializable {
 		site.setUrl(CHEEMXLEXT);
 		site.setName(CHEEMXLNAM);
 		checker.checkSite(site);
-		if(site.isReachable()){
-			model.add(site);
-		}
+		model.add(site);
 		
 		oldValue = this.progress;
 		this.progress = increment(oldValue, 16);
@@ -123,9 +117,7 @@ public class SystemChecker implements Serializable {
 		site.setUrl(JASPRDDEXT);
 		site.setName(JASPRDDNAM);
 		checker.checkSite(site);
-		if(site.isReachable()){
-			model.add(site);
-		}
+		model.add(site);
 		
 		oldValue = this.progress;
 		this.progress = increment(oldValue, 16);
@@ -135,9 +127,7 @@ public class SystemChecker implements Serializable {
 		site.setUrl(JASPTKTEXT);
 		site.setName(JASPTKTNAM);
 		checker.checkSite(site);
-		if(site.isReachable()){
-			model.add(site);
-		}
+		model.add(site);
 		
 		oldValue = this.progress;
 		this.progress = increment(oldValue, 16);
@@ -147,9 +137,7 @@ public class SystemChecker implements Serializable {
 		site.setUrl(JASPMXLEXT);
 		site.setName(JASPMXLNAM);
 		checker.checkSite(site);
-		if(site.isReachable()){
-			model.add(site);
-		}
+		model.add(site);
 		
 		oldValue = this.progress;
 		this.progress = increment(oldValue, 20);
